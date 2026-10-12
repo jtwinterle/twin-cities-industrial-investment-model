@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project is a hypothetical real estate investment model for a 100,000 SF modern industrial property in the Twin Cities market. The model looks at the property's operating performance, financing, cash flow, and potential investment returns over a 10-year hold period.
+This project is a hypothetical real estate investment model for a 100,000 SF modern industrial property in the Twin Cities market. It evaluates operating performance, financing, cash flow, and potential investment returns over a 10-year hold.
 
-The assumptions are based on Q2 2026 Twin Cities industrial market reports from CBRE, Colliers, and Lee & Associates, along with additional underwriting assumptions for financing and the property's exit.
+Market assumptions are informed by Q2 2026 Twin Cities industrial market reports from CBRE, Colliers, and Lee & Associates, alongside explicit underwriting assumptions for financing and exit valuation.
 
 ## Key Assumptions
 
@@ -15,22 +15,25 @@ The assumptions are based on Q2 2026 Twin Cities industrial market reports from 
 - Rent Growth: 2.0%
 - Vacancy: 5.5%
 - Purchase Price: $11.6 million
-- Going-In Cap Rate: 7.0%
-- Exit Cap Rate: 7.5%
-- Loan-to-Value: 65%
+- Going-In Cap Rate: Year-1 NOI ÷ Purchase Price (formula-driven)
+- Exit Cap Rate: 7.50%
+- Loan-to-Value: 60%
+- Year-1 DSCR: 1.33x (1.25x lender minimum)
 - Interest Rate: 7.25%
 - Amortization: 25 years
 - Hold Period: 10 years
 
 ## Scenario Analysis
 
-The model includes three scenarios to show how changes in operating performance and exit assumptions affect the investment.
+The scenarios illustrate how changes in rent growth, vacancy, and exit capitalization rate affect levered returns.
 
 | Scenario | Rent Growth | Vacancy | Exit Cap | Levered IRR | Equity Multiple |
-|---|---:|---:|---:|---:|---:|
-| Downside | 0.0% | 10.0% | 8.25% | 0.1% | 1.01x |
-| Base | 2.0% | 5.5% | 7.50% | 9.8% | 2.27x |
-| Upside | 3.5% | 4.5% | 7.00% | 14.5% | 3.30x |
+| -------- | ----------- | ------- | -------- | ----------- | --------------- |
+| Downside | 0.0% | 10.0% | 8.25% | 1.0% | 1.09x |
+| Base | 2.0% | 5.5% | 7.50% | 9.2% | 2.14x |
+| Upside | 3.5% | 4.5% | 7.00% | 13.4% | 2.98x |
+
+Debt is sized at 60% LTV so Year-1 DSCR stays above a 1.25x lender minimum.
 
 ## Market Sources
 
@@ -40,7 +43,7 @@ The main market assumptions were cross-checked against:
 - Colliers — Q2 2026 Minneapolis–St. Paul Industrial Market
 - Lee & Associates — Q2 2026 Twin Cities Industrial Market
 
-The market reports were used to support the rent, vacancy, and broader cap-rate assumptions in the model.
+These reports inform rent, vacancy, and broader cap-rate assumptions. Financing and investment-return assumptions are underwriting inputs rather than market facts.
 
 ## Files
 
